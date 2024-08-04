@@ -1,0 +1,255 @@
+{
+     "routes": [
+          {
+               "route": [
+                    {
+                         "job": {
+                              "initialTime": 31,
+                              "id": 11,
+                              "initialPos": 47,
+                              "endTime": 39,
+                              "endPos": 34
+                         },
+                         "order": 0
+                    },
+                    {
+                         "job": {
+                              "initialTime": 20,
+                              "id": 16,
+                              "initialPos": 38,
+                              "endTime": 94,
+                              "endPos": 25
+                         },
+                         "order": 1
+                    },
+                    {
+                         "job": {
+                              "initialTime": 90,
+                              "id": 8,
+                              "initialPos": 5,
+                              "endTime": 54,
+                              "endPos": 21
+                         },
+                         "order": 2
+                    },
+                    {
+                         "job": {
+                              "initialTime": 83,
+                              "id": 19,
+                              "initialPos": 26,
+                              "endTime": 14,
+                              "endPos": 39
+                         },
+                         "order": 3
+                    }
+               ],
+               "vehicle": {
+                    "id": 4,
+                    "time": 47,
+                    "initialPos": 34,
+                    "priority": 3
+               }
+          },
+          {
+               "route": [
+                    {
+                         "job": {
+                              "initialTime": 100,
+                              "id": 15,
+                              "initialPos": 27,
+                              "endTime": 74,
+                              "endPos": 44
+                         },
+                         "order": 0
+                    },
+                    {
+                         "job": {
+                              "initialTime": 96,
+                              "id": 6,
+                              "initialPos": 13,
+                              "endTime": 76,
+                              "endPos": 24
+                         },
+                         "order": 1
+                    },
+                    {
+                         "job": {
+                              "initialTime": 38,
+                              "id": 5,
+                              "initialPos": 2,
+                              "endTime": 5,
+                              "endPos": 4
+                         },
+                         "order": 2
+                    },
+                    {
+                         "job": {
+                              "initialTime": 34,
+                              "id": 4,
+                              "initialPos": 10,
+                              "endTime": 77,
+                              "endPos": 15
+                         },
+                         "order": 3
+                    }
+               ],
+               "vehicle": {
+                    "id": 3,
+                    "time": 77,
+                    "initialPos": 8,
+                    "priority": 4
+               }
+          },
+          {
+               "route": [
+                    {
+                         "job": {
+                              "initialTime": 14,
+                              "id": 12,
+                              "initialPos": 35,
+                              "endTime": 94,
+                              "endPos": 32
+                         },
+                         "order": 0
+                    },
+                    {
+                         "job": {
+                              "initialTime": 18,
+                              "id": 10,
+                              "initialPos": 47,
+                              "endTime": 8,
+                              "endPos": 33
+                         },
+                         "order": 1
+                    },
+                    {
+                         "job": {
+                              "initialTime": 41,
+                              "id": 7,
+                              "initialPos": 33,
+                              "endTime": 21,
+                              "endPos": 29
+                         },
+                         "order": 2
+                    },
+                    {
+                         "job": {
+                              "initialTime": 62,
+                              "id": 1,
+                              "initialPos": 24,
+                              "endTime": 61,
+                              "endPos": 30
+                         },
+                         "order": 3
+                    },
+                    {
+                         "job": {
+                              "initialTime": 32,
+                              "id": 14,
+                              "initialPos": 33,
+                              "endTime": 53,
+                              "endPos": 12
+                         },
+                         "order": 4
+                    }
+               ],
+               "vehicle": {
+                    "id": 0,
+                    "time": 64,
+                    "initialPos": 37,
+                    "priority": 2
+               }
+          },
+          {
+               "route": [
+                    {
+                         "job": {
+                              "initialTime": 95,
+                              "id": 18,
+                              "initialPos": 45,
+                              "endTime": 87,
+                              "endPos": 48
+                         },
+                         "order": 0
+                    },
+                    {
+                         "job": {
+                              "initialTime": 70,
+                              "id": 0,
+                              "initialPos": 20,
+                              "endTime": 99,
+                              "endPos": 38
+                         },
+                         "order": 1
+                    },
+                    {
+                         "job": {
+                              "initialTime": 64,
+                              "id": 2,
+                              "initialPos": 46,
+                              "endTime": 84,
+                              "endPos": 27
+                         },
+                         "order": 2
+                    }
+               ],
+               "vehicle": {
+                    "id": 2,
+                    "time": 15,
+                    "initialPos": 3,
+                    "priority": 1
+               }
+          },
+          {
+               "route": [
+                    {
+                         "job": {
+                              "initialTime": 12,
+                              "id": 9,
+                              "initialPos": 36,
+                              "endTime": 92,
+                              "endPos": 16
+                         },
+                         "order": 0
+                    },
+                    {
+                         "job": {
+                              "initialTime": 84,
+                              "id": 3,
+                              "initialPos": 16,
+                              "endTime": 46,
+                              "endPos": 32
+                         },
+                         "order": 1
+                    },
+                    {
+                         "job": {
+                              "initialTime": 56,
+                              "id": 17,
+                              "initialPos": 29,
+                              "endTime": 86,
+                              "endPos": 28
+                         },
+                         "order": 2
+                    },
+                    {
+                         "job": {
+                              "initialTime": 76,
+                              "id": 13,
+                              "initialPos": 48,
+                              "endTime": 25,
+                              "endPos": 10
+                         },
+                         "order": 3
+                    }
+               ],
+               "vehicle": {
+                    "id": 1,
+                    "time": 39,
+                    "initialPos": 3,
+                    "priority": 0
+               }
+          }
+     ],
+     "objectiveFunctions": [{"value": 864}]
+}

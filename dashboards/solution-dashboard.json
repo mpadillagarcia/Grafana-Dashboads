@@ -1,0 +1,3179 @@
+{
+    "annotations": {
+      "list": [
+        {
+          "builtIn": 1,
+          "datasource": {
+            "type": "grafana",
+            "uid": "-- Grafana --"
+          },
+          "enable": true,
+          "hide": true,
+          "iconColor": "rgba(0, 211, 255, 1)",
+          "name": "Annotations & Alerts",
+          "type": "dashboard"
+        }
+      ]
+    },
+    "editable": true,
+    "fiscalYearStartMonth": 0,
+    "graphTooltip": 0,
+    "id": 3,
+    "links": [],
+    "panels": [
+      {
+        "datasource": {
+          "type": "yesoreyeram-infinity-datasource",
+          "uid": "ddgvicmd81logd"
+        },
+        "gridPos": {
+          "h": 1,
+          "w": 10,
+          "x": 0,
+          "y": 0
+        },
+        "id": 19,
+        "options": {
+          "code": {
+            "language": "plaintext",
+            "showLineNumbers": false,
+            "showMiniMap": false
+          },
+          "content": "",
+          "mode": "markdown"
+        },
+        "pluginVersion": "10.4.1",
+        "title": "Solución - Trayectoria de vehículos",
+        "type": "text"
+      },
+      {
+        "datasource": {
+          "type": "grafana-testdata-datasource",
+          "uid": "edksd0i6rrdhcd"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "custom": {
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 13,
+          "w": 14,
+          "x": 10,
+          "y": 0
+        },
+        "id": 102,
+        "options": {
+          "basemap": {
+            "config": {},
+            "name": "Layer 0",
+            "opacity": 0,
+            "tooltip": false,
+            "type": "xyz"
+          },
+          "controls": {
+            "mouseWheelZoom": true,
+            "showAttribution": false,
+            "showDebug": false,
+            "showMeasure": false,
+            "showScale": false,
+            "showZoom": true
+          },
+          "layers": [
+            {
+              "config": {
+                "showLegend": false,
+                "style": {
+                  "color": {
+                    "fixed": "transparent"
+                  },
+                  "opacity": 1,
+                  "rotation": {
+                    "fixed": 0,
+                    "max": 360,
+                    "min": -360,
+                    "mode": "mod"
+                  },
+                  "size": {
+                    "fixed": 10,
+                    "max": 15,
+                    "min": 2
+                  },
+                  "symbol": {
+                    "fixed": "img/icons/marker/circle.svg",
+                    "mode": "fixed"
+                  },
+                  "symbolAlign": {
+                    "horizontal": "center",
+                    "vertical": "center"
+                  },
+                  "text": {
+                    "field": "node",
+                    "fixed": "",
+                    "mode": "fixed"
+                  },
+                  "textConfig": {
+                    "offsetX": 0,
+                    "offsetY": 0,
+                    "textAlign": "center",
+                    "textBaseline": "middle"
+                  }
+                }
+              },
+              "filterData": {
+                "id": "byRefId",
+                "options": "A"
+              },
+              "location": {
+                "mode": "auto"
+              },
+              "name": "Layer 3",
+              "tooltip": false,
+              "type": "markers"
+            },
+            {
+              "config": {
+                "showLegend": false,
+                "style": {
+                  "color": {
+                    "fixed": "text"
+                  },
+                  "opacity": 0,
+                  "rotation": {
+                    "fixed": 0,
+                    "max": 360,
+                    "min": -360,
+                    "mode": "mod"
+                  },
+                  "size": {
+                    "fixed": 1,
+                    "max": 15,
+                    "min": 2
+                  },
+                  "symbol": {
+                    "fixed": "img/icons/unicons/16-plus.svg",
+                    "mode": "fixed"
+                  },
+                  "symbolAlign": {
+                    "horizontal": "center",
+                    "vertical": "center"
+                  },
+                  "text": {
+                    "field": "node",
+                    "fixed": "1",
+                    "mode": "field"
+                  },
+                  "textConfig": {
+                    "fontSize": 25,
+                    "offsetX": 0,
+                    "offsetY": 0,
+                    "textAlign": "center",
+                    "textBaseline": "middle"
+                  }
+                }
+              },
+              "filterData": {
+                "id": "byRefId",
+                "options": "A"
+              },
+              "location": {
+                "mode": "auto"
+              },
+              "name": "Layer 4",
+              "tooltip": false,
+              "type": "markers"
+            },
+            {
+              "config": {
+                "arrow": 0,
+                "style": {
+                  "color": {
+                    "fixed": "#3883f3"
+                  },
+                  "lineWidth": 2,
+                  "opacity": 1,
+                  "rotation": {
+                    "fixed": 0,
+                    "max": 360,
+                    "min": -360,
+                    "mode": "mod"
+                  },
+                  "size": {
+                    "fixed": 5,
+                    "max": 15,
+                    "min": 2
+                  },
+                  "symbol": {
+                    "fixed": "img/icons/marker/circle.svg",
+                    "mode": "fixed"
+                  },
+                  "symbolAlign": {
+                    "horizontal": "center",
+                    "vertical": "center"
+                  },
+                  "textConfig": {
+                    "fontSize": 12,
+                    "offsetX": 0,
+                    "offsetY": 0,
+                    "textAlign": "center",
+                    "textBaseline": "middle"
+                  }
+                }
+              },
+              "filterData": {
+                "id": "byRefId",
+                "options": "B"
+              },
+              "location": {
+                "mode": "auto"
+              },
+              "name": "Layer 5",
+              "opacity": 0.7,
+              "tooltip": true,
+              "type": "route"
+            },
+            {
+              "config": {
+                "arrow": 0,
+                "style": {
+                  "color": {
+                    "fixed": "dark-red"
+                  },
+                  "lineWidth": 2,
+                  "opacity": 1,
+                  "rotation": {
+                    "fixed": 0,
+                    "max": 360,
+                    "min": -360,
+                    "mode": "mod"
+                  },
+                  "size": {
+                    "fixed": 5,
+                    "max": 15,
+                    "min": 2
+                  },
+                  "symbol": {
+                    "fixed": "img/icons/marker/circle.svg",
+                    "mode": "fixed"
+                  },
+                  "symbolAlign": {
+                    "horizontal": "center",
+                    "vertical": "center"
+                  },
+                  "textConfig": {
+                    "fontSize": 12,
+                    "offsetX": 0,
+                    "offsetY": 0,
+                    "textAlign": "center",
+                    "textBaseline": "middle"
+                  }
+                }
+              },
+              "filterData": {
+                "id": "byRefId",
+                "options": "C"
+              },
+              "location": {
+                "mode": "auto"
+              },
+              "name": "Layer 6",
+              "opacity": 0.7,
+              "tooltip": true,
+              "type": "route"
+            },
+            {
+              "config": {
+                "arrow": 0,
+                "style": {
+                  "color": {
+                    "fixed": "yellow"
+                  },
+                  "lineWidth": 2,
+                  "opacity": 1,
+                  "rotation": {
+                    "fixed": 0,
+                    "max": 360,
+                    "min": -360,
+                    "mode": "mod"
+                  },
+                  "size": {
+                    "fixed": 5,
+                    "max": 15,
+                    "min": 2
+                  },
+                  "symbol": {
+                    "fixed": "img/icons/marker/circle.svg",
+                    "mode": "fixed"
+                  },
+                  "symbolAlign": {
+                    "horizontal": "center",
+                    "vertical": "center"
+                  },
+                  "textConfig": {
+                    "fontSize": 12,
+                    "offsetX": 0,
+                    "offsetY": 0,
+                    "textAlign": "center",
+                    "textBaseline": "middle"
+                  }
+                }
+              },
+              "filterData": {
+                "id": "byRefId",
+                "options": "D"
+              },
+              "location": {
+                "mode": "auto"
+              },
+              "name": "Layer 7",
+              "opacity": 0.7,
+              "tooltip": true,
+              "type": "route"
+            },
+            {
+              "config": {
+                "arrow": 0,
+                "style": {
+                  "color": {
+                    "fixed": "green"
+                  },
+                  "lineWidth": 2,
+                  "opacity": 1,
+                  "rotation": {
+                    "fixed": 0,
+                    "max": 360,
+                    "min": -360,
+                    "mode": "mod"
+                  },
+                  "size": {
+                    "fixed": 5,
+                    "max": 15,
+                    "min": 2
+                  },
+                  "symbol": {
+                    "fixed": "img/icons/marker/circle.svg",
+                    "mode": "fixed"
+                  },
+                  "symbolAlign": {
+                    "horizontal": "center",
+                    "vertical": "center"
+                  },
+                  "textConfig": {
+                    "fontSize": 12,
+                    "offsetX": 0,
+                    "offsetY": 0,
+                    "textAlign": "center",
+                    "textBaseline": "middle"
+                  }
+                }
+              },
+              "filterData": {
+                "id": "byRefId",
+                "options": "E"
+              },
+              "location": {
+                "mode": "auto"
+              },
+              "name": "Layer 8",
+              "opacity": 0.7,
+              "tooltip": true,
+              "type": "route"
+            },
+            {
+              "config": {
+                "arrow": 0,
+                "style": {
+                  "color": {
+                    "fixed": "purple"
+                  },
+                  "lineWidth": 2,
+                  "opacity": 1,
+                  "rotation": {
+                    "fixed": 0,
+                    "max": 360,
+                    "min": -360,
+                    "mode": "mod"
+                  },
+                  "size": {
+                    "fixed": 5,
+                    "max": 15,
+                    "min": 2
+                  },
+                  "symbol": {
+                    "fixed": "img/icons/marker/circle.svg",
+                    "mode": "fixed"
+                  },
+                  "symbolAlign": {
+                    "horizontal": "center",
+                    "vertical": "center"
+                  },
+                  "textConfig": {
+                    "fontSize": 12,
+                    "offsetX": 0,
+                    "offsetY": 0,
+                    "textAlign": "center",
+                    "textBaseline": "middle"
+                  }
+                }
+              },
+              "filterData": {
+                "id": "byRefId",
+                "options": "F"
+              },
+              "location": {
+                "mode": "auto"
+              },
+              "name": "Layer 9",
+              "opacity": 0.7,
+              "tooltip": true,
+              "type": "route"
+            },
+            {
+              "config": {
+                "arrow": 0,
+                "style": {
+                  "color": {
+                    "fixed": "orange"
+                  },
+                  "lineWidth": 2,
+                  "opacity": 1,
+                  "rotation": {
+                    "fixed": 0,
+                    "max": 360,
+                    "min": -360,
+                    "mode": "mod"
+                  },
+                  "size": {
+                    "fixed": 5,
+                    "max": 15,
+                    "min": 2
+                  },
+                  "symbol": {
+                    "fixed": "img/icons/marker/circle.svg",
+                    "mode": "fixed"
+                  },
+                  "symbolAlign": {
+                    "horizontal": "center",
+                    "vertical": "center"
+                  },
+                  "textConfig": {
+                    "fontSize": 12,
+                    "offsetX": 0,
+                    "offsetY": 0,
+                    "textAlign": "center",
+                    "textBaseline": "middle"
+                  }
+                }
+              },
+              "filterData": {
+                "id": "byRefId",
+                "options": "G"
+              },
+              "location": {
+                "mode": "auto"
+              },
+              "name": "Layer 10",
+              "opacity": 0.7,
+              "tooltip": true,
+              "type": "route"
+            },
+            {
+              "config": {
+                "arrow": 0,
+                "style": {
+                  "color": {
+                    "fixed": "#622400"
+                  },
+                  "lineWidth": 2,
+                  "opacity": 1,
+                  "rotation": {
+                    "fixed": 0,
+                    "max": 360,
+                    "min": -360,
+                    "mode": "mod"
+                  },
+                  "size": {
+                    "fixed": 5,
+                    "max": 15,
+                    "min": 2
+                  },
+                  "symbol": {
+                    "fixed": "img/icons/marker/circle.svg",
+                    "mode": "fixed"
+                  },
+                  "symbolAlign": {
+                    "horizontal": "center",
+                    "vertical": "center"
+                  },
+                  "textConfig": {
+                    "fontSize": 12,
+                    "offsetX": 0,
+                    "offsetY": 0,
+                    "textAlign": "center",
+                    "textBaseline": "middle"
+                  }
+                }
+              },
+              "filterData": {
+                "id": "byRefId",
+                "options": "H"
+              },
+              "location": {
+                "mode": "auto"
+              },
+              "name": "Layer 11",
+              "opacity": 0.7,
+              "tooltip": true,
+              "type": "route"
+            },
+            {
+              "config": {
+                "arrow": 0,
+                "style": {
+                  "color": {
+                    "fixed": "#ff79bb"
+                  },
+                  "lineWidth": 2,
+                  "opacity": 1,
+                  "rotation": {
+                    "fixed": 0,
+                    "max": 360,
+                    "min": -360,
+                    "mode": "mod"
+                  },
+                  "size": {
+                    "fixed": 5,
+                    "max": 15,
+                    "min": 2
+                  },
+                  "symbol": {
+                    "fixed": "img/icons/marker/circle.svg",
+                    "mode": "fixed"
+                  },
+                  "symbolAlign": {
+                    "horizontal": "center",
+                    "vertical": "center"
+                  },
+                  "textConfig": {
+                    "fontSize": 12,
+                    "offsetX": 0,
+                    "offsetY": 0,
+                    "textAlign": "center",
+                    "textBaseline": "middle"
+                  }
+                }
+              },
+              "filterData": {
+                "id": "byRefId",
+                "options": "I"
+              },
+              "location": {
+                "mode": "auto"
+              },
+              "name": "Layer 12",
+              "opacity": 0.7,
+              "tooltip": true,
+              "type": "route"
+            },
+            {
+              "config": {
+                "arrow": 0,
+                "style": {
+                  "color": {
+                    "fixed": "#a0a0a0"
+                  },
+                  "lineWidth": 2,
+                  "opacity": 1,
+                  "rotation": {
+                    "fixed": 0,
+                    "max": 360,
+                    "min": -360,
+                    "mode": "mod"
+                  },
+                  "size": {
+                    "fixed": 5,
+                    "max": 15,
+                    "min": 2
+                  },
+                  "symbol": {
+                    "fixed": "img/icons/marker/circle.svg",
+                    "mode": "fixed"
+                  },
+                  "symbolAlign": {
+                    "horizontal": "center",
+                    "vertical": "center"
+                  },
+                  "textConfig": {
+                    "fontSize": 12,
+                    "offsetX": 0,
+                    "offsetY": 0,
+                    "textAlign": "center",
+                    "textBaseline": "middle"
+                  }
+                }
+              },
+              "filterData": {
+                "id": "byRefId",
+                "options": "J"
+              },
+              "location": {
+                "mode": "auto"
+              },
+              "name": "Layer 13",
+              "opacity": 0.7,
+              "tooltip": true,
+              "type": "route"
+            },
+            {
+              "config": {
+                "arrow": 0,
+                "style": {
+                  "color": {
+                    "fixed": "#00d7ff"
+                  },
+                  "lineWidth": 2,
+                  "opacity": 1,
+                  "rotation": {
+                    "fixed": 0,
+                    "max": 360,
+                    "min": -360,
+                    "mode": "mod"
+                  },
+                  "size": {
+                    "fixed": 5,
+                    "max": 15,
+                    "min": 2
+                  },
+                  "symbol": {
+                    "fixed": "img/icons/marker/circle.svg",
+                    "mode": "fixed"
+                  },
+                  "symbolAlign": {
+                    "horizontal": "center",
+                    "vertical": "center"
+                  },
+                  "textConfig": {
+                    "fontSize": 12,
+                    "offsetX": 0,
+                    "offsetY": 0,
+                    "textAlign": "center",
+                    "textBaseline": "middle"
+                  }
+                }
+              },
+              "filterData": {
+                "id": "byRefId",
+                "options": "K"
+              },
+              "location": {
+                "mode": "auto"
+              },
+              "name": "Layer 14",
+              "opacity": 0.7,
+              "tooltip": true,
+              "type": "route"
+            }
+          ],
+          "tooltip": {
+            "mode": "details"
+          },
+          "view": {
+            "allLayers": true,
+            "id": "coords",
+            "lat": 0.5,
+            "lon": 1,
+            "shared": false,
+            "zoom": 9
+          }
+        },
+        "pluginVersion": "10.4.1",
+        "targets": [
+          {
+            "csvContent": "node,latitude,longitude\r\n118,0.19699,0.67248\r\n135,0.84796,1.00198\r\n133,0.46976,1.58644\r\n24,0.24344,0.32834\r\n55,0.698,1.76064\r\n102,0.17575,1.10772\r\n40,0.692,1.40832\r\n162,0.74003,0.41488\r\n37,0.16054,0.4674\r\n155,0.54955,0.28438\r\n77,0.92209,1.40082\r\n118,0.19699,0.67248\r\n135,0.84796,1.00198\r\n133,0.46976,1.58644\r\n24,0.24344,0.32834\r\n55,0.698,1.76064\r\n102,0.17575,1.10772\r\n40,0.692,1.40832\r\n162,0.74003,0.41488\r\n37,0.16054,0.4674\r\n155,0.54955,0.28438\r\n77,0.92209,1.40082\r\n159,0.34782,1.7772\r\n86,0.84011,0.4397\r\n26,0.40696,0.57562\r\n13,0.42709,1.95368\r\n103,0.51309,1.97642\r\n194,0.8776,1.55552\r\n164,0.03471,0.9157\r\n64,0.0822,1.58954\r\n111,0.92763,0.4285\r\n129,0.59126,0.32922\r\n190,0.18426,0.47262\r\n148,0.32674,1.35874\r\n152,0.49901,1.19584\r\n39,0.34956,0.72592\r\n128,0.15274,1.0896\r\n160,0.89784,0.6005\r\n112,0.2643,1.5751\r\n116,0.30811,0.4477\r\n11,0.80242,1.71096\r\n101,0.06079,1.30018\r\n45,0.6501,1.75744\r\n71,0.6931,0.92024\r\n99,0.20172,1.04308\r\n76,0.79173,0.37942\r\n93,0.85323,1.75646\r\n1,0.43441,1.34254\r\n162,0.74003,0.41488\r\n78,0.45378,1.90292\r\n51,0.48298,0.26548\r\n66,0.83892,1.41028\r\n157,1.0,0.78188\r\n114,0.77829,1.13766\r\n180,0.34653,1.52106\r\n34,0.22515,1.7466\r\n110,0.40991,0.10248\r\n168,0.62301,0.28748\r\n19,0.54947,0.65656\r\n195,0.94168,1.33292\r\n90,0.23916,1.14968\r\n177,0.83677,0.63938\r\n143,0.07466,0.94012\r\n83,0.971,1.1607\r\n99,0.20172,1.04308\r\n173,0.22629,1.68884\r\n32,0.55493,0.18694\r\n134,0.07933,0.51266\r\n189,0.5704,1.1543\r\n78,0.45378,1.90292\r\n105,0.08749,0.92246\r\n77,0.92209,1.40082\r\n79,0.51625,1.77146\r\n44,0.49859,1.85098\r\n101,0.06079,1.30018\r\n117,0.41678,1.3772\r\n193,0.31574,1.34354\r\n93,0.85323,1.75646\r\n158,0.77107,1.26412\r\n99,0.20172,1.04308\r\n45,0.6501,1.75744\r\n147,0.67344,0.42872\r\n145,0.51065,0.74418\r\n18,0.37423,1.71556\r\n119,0.45261,1.33094\r\n109,0.13485,0.59038\r\n167,0.3622,0.92538\r\n108,0.40865,0.35604\r\n56,0.33043,0.93736\r\n99,0.20172,1.04308\r\n66,0.83892,1.41028\r\n174,0.63843,1.74028\r\n82,0.12371,0.7359\r\n139,0.21938,1.26714\r\n17,0.24297,1.2795\r\n78,0.45378,1.90292\r\n79,0.51625,1.77146\r\n187,0.82192,1.6585\r\n7,0.30293,1.90864\r\n198,0.53712,1.16022\r\n75,0.18605,0.76836\r\n162,0.74003,0.41488\r\n88,0.92719,0.73024\r\n31,0.32261,0.38374\r\n130,0.24013,1.4095\r\n189,0.5704,1.1543\r\n184,0.88395,0.44552\r\n82,0.12371,0.7359\r\n126,0.96224,1.05886\r\n50,0.20882,0.54142\r\n96,0.60399,1.77918\r\n108,0.40865,0.35604\r\n129,0.59126,0.32922\r\n178,0.88837,0.74168\r\n184,0.88395,0.44552\r\n51,0.48298,0.26548\r\n28,0.08317,0.71506\r\n197,0.93725,0.8753\r\n38,0.42522,0.22388\r\n115,0.86891,1.6232\r\n70,0.60583,1.54248\r\n119,0.45261,1.33094\r\n175,0.85084,0.95858\r\n127,0.36237,0.04634\r\n8,0.85883,1.42374\r\n149,0.57665,0.33498\r\n155,0.54955,0.28438\r\n187,0.82192,1.6585\r\n180,0.34653,1.52106\r\n30,0.13651,1.0439\r\n38,0.42522,0.22388",
+            "datasource": {
+              "type": "grafana-testdata-datasource",
+              "uid": "edksd0i6rrdhcd"
+            },
+            "refId": "A",
+            "scenarioId": "csv_content"
+          },
+          {
+            "csvContent": "node,latitude,longitude\r\n118,0.19699,0.67248\r\n135,0.84796,1.00198\r\n133,0.46976,1.58644\r\n24,0.24344,0.32834\r\n55,0.698,1.76064\r\n102,0.17575,1.10772\r\n40,0.692,1.40832\r\n162,0.74003,0.41488\r\n37,0.16054,0.4674\r\n155,0.54955,0.28438\r\n77,0.92209,1.40082",
+            "datasource": {
+              "type": "grafana-testdata-datasource",
+              "uid": "edksd0i6rrdhcd"
+            },
+            "hide": false,
+            "refId": "B",
+            "scenarioId": "csv_content"
+          },
+          {
+            "csvContent": "node,latitude,longitude\r\n159,0.34782,1.7772\r\n86,0.84011,0.4397\r\n26,0.40696,0.57562\r\n13,0.42709,1.95368\r\n103,0.51309,1.97642\r\n194,0.8776,1.55552\r\n164,0.03471,0.9157\r\n64,0.0822,1.58954\r\n111,0.92763,0.4285\r\n129,0.59126,0.32922\r\n190,0.18426,0.47262",
+            "datasource": {
+              "type": "grafana-testdata-datasource",
+              "uid": "edksd0i6rrdhcd"
+            },
+            "hide": false,
+            "refId": "C",
+            "scenarioId": "csv_content"
+          },
+          {
+            "csvContent": "node,latitude,longitude\r\n148,0.32674,1.35874\r\n152,0.49901,1.19584\r\n39,0.34956,0.72592\r\n128,0.15274,1.0896\r\n160,0.89784,0.6005\r\n112,0.2643,1.5751\r\n116,0.30811,0.4477\r\n11,0.80242,1.71096\r\n101,0.06079,1.30018\r\n45,0.6501,1.75744\r\n71,0.6931,0.92024\r\n99,0.20172,1.04308\r\n\r\n",
+            "datasource": {
+              "type": "grafana-testdata-datasource",
+              "uid": "edksd0i6rrdhcd"
+            },
+            "hide": false,
+            "refId": "D",
+            "scenarioId": "csv_content"
+          },
+          {
+            "csvContent": "node,latitude,longitude\r\n76,0.79173,0.37942\r\n93,0.85323,1.75646\r\n1,0.43441,1.34254\r\n162,0.74003,0.41488\r\n78,0.45378,1.90292\r\n51,0.48298,0.26548\r\n66,0.83892,1.41028\r\n157,1.0,0.78188\r\n114,0.77829,1.13766\r\n180,0.34653,1.52106\r\n34,0.22515,1.7466\r\n110,0.40991,0.10248\r\n168,0.62301,0.28748",
+            "datasource": {
+              "type": "grafana-testdata-datasource",
+              "uid": "edksd0i6rrdhcd"
+            },
+            "hide": false,
+            "refId": "E",
+            "scenarioId": "csv_content"
+          },
+          {
+            "csvContent": "node,latitude,longitude\r\n19,0.54947,0.65656\r\n195,0.94168,1.33292\r\n90,0.23916,1.14968\r\n177,0.83677,0.63938\r\n143,0.07466,0.94012\r\n83,0.971,1.1607\r\n99,0.20172,1.04308\r\n173,0.22629,1.68884\r\n32,0.55493,0.18694\r\n134,0.07933,0.51266\r\n189,0.5704,1.1543\r\n78,0.45378,1.90292",
+            "datasource": {
+              "type": "grafana-testdata-datasource",
+              "uid": "edksd0i6rrdhcd"
+            },
+            "hide": false,
+            "refId": "F",
+            "scenarioId": "csv_content"
+          },
+          {
+            "csvContent": "node,latitude,longitude\r\n105,0.08749,0.92246\r\n77,0.92209,1.40082\r\n79,0.51625,1.77146\r\n44,0.49859,1.85098\r\n101,0.06079,1.30018\r\n117,0.41678,1.3772\r\n193,0.31574,1.34354\r\n93,0.85323,1.75646\r\n158,0.77107,1.26412\r\n99,0.20172,1.04308\r\n45,0.6501,1.75744\r\n147,0.67344,0.42872\r\n145,0.51065,0.74418\r\n",
+            "datasource": {
+              "type": "grafana-testdata-datasource",
+              "uid": "edksd0i6rrdhcd"
+            },
+            "hide": false,
+            "refId": "G",
+            "scenarioId": "csv_content"
+          },
+          {
+            "csvContent": "node,latitude,longitude\r\n18,0.37423,1.71556\r\n119,0.45261,1.33094\r\n109,0.13485,0.59038\r\n167,0.3622,0.92538\r\n108,0.40865,0.35604\r\n56,0.33043,0.93736\r\n99,0.20172,1.04308\r\n66,0.83892,1.41028\r\n174,0.63843,1.74028\r\n82,0.12371,0.7359\r\n139,0.21938,1.26714\r\n17,0.24297,1.2795",
+            "datasource": {
+              "type": "grafana-testdata-datasource",
+              "uid": "edksd0i6rrdhcd"
+            },
+            "hide": false,
+            "refId": "H",
+            "scenarioId": "csv_content"
+          },
+          {
+            "csvContent": "node,latitude,longitude\r\n78,0.45378,1.90292\r\n79,0.51625,1.77146\r\n187,0.82192,1.6585\r\n7,0.30293,1.90864\r\n198,0.53712,1.16022\r\n75,0.18605,0.76836\r\n162,0.74003,0.41488\r\n88,0.92719,0.73024\r\n31,0.32261,0.38374\r\n130,0.24013,1.4095\r\n189,0.5704,1.1543\r\n184,0.88395,0.44552",
+            "datasource": {
+              "type": "grafana-testdata-datasource",
+              "uid": "edksd0i6rrdhcd"
+            },
+            "hide": false,
+            "refId": "I",
+            "scenarioId": "csv_content"
+          },
+          {
+            "csvContent": "node,latitude,longitude\r\n82,0.12371,0.7359\r\n126,0.96224,1.05886\r\n50,0.20882,0.54142\r\n96,0.60399,1.77918\r\n108,0.40865,0.35604\r\n129,0.59126,0.32922\r\n178,0.88837,0.74168\r\n184,0.88395,0.44552\r\n51,0.48298,0.26548\r\n28,0.08317,0.71506\r\n197,0.93725,0.8753\r\n38,0.42522,0.22388\r\n115,0.86891,1.6232",
+            "datasource": {
+              "type": "grafana-testdata-datasource",
+              "uid": "edksd0i6rrdhcd"
+            },
+            "hide": false,
+            "refId": "J",
+            "scenarioId": "csv_content"
+          },
+          {
+            "csvContent": "node,latitude,longitude\r\n70,0.60583,1.54248\r\n119,0.45261,1.33094\r\n175,0.85084,0.95858\r\n127,0.36237,0.04634\r\n8,0.85883,1.42374\r\n149,0.57665,0.33498\r\n155,0.54955,0.28438\r\n187,0.82192,1.6585\r\n180,0.34653,1.52106\r\n30,0.13651,1.0439\r\n38,0.42522,0.22388\r\n",
+            "datasource": {
+              "type": "grafana-testdata-datasource",
+              "uid": "edksd0i6rrdhcd"
+            },
+            "hide": false,
+            "refId": "K",
+            "scenarioId": "csv_content"
+          }
+        ],
+        "title": "Vehicle trajectories GeoMap",
+        "type": "geomap"
+      },
+      {
+        "datasource": {
+          "type": "yesoreyeram-infinity-datasource",
+          "uid": "ddgvicmd81logd"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "fixedColor": "text",
+              "mode": "fixed"
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 3,
+          "w": 2,
+          "x": 0,
+          "y": 1
+        },
+        "id": 72,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "area",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "showPercentChange": false,
+          "textMode": "auto",
+          "wideLayout": true
+        },
+        "pluginVersion": "10.4.1",
+        "targets": [
+          {
+            "columns": [],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "parser": "backend",
+            "refId": "A",
+            "root_selector": "numJobs",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/instances/instance-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          }
+        ],
+        "title": "Jobs",
+        "type": "stat"
+      },
+      {
+        "datasource": {
+          "type": "yesoreyeram-infinity-datasource",
+          "uid": "ddgvicmd81logd"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "fixedColor": "text",
+              "mode": "fixed"
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 3,
+          "w": 2,
+          "x": 2,
+          "y": 1
+        },
+        "id": 71,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "area",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "showPercentChange": false,
+          "textMode": "auto",
+          "wideLayout": true
+        },
+        "pluginVersion": "10.4.1",
+        "targets": [
+          {
+            "columns": [],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "parser": "backend",
+            "refId": "A",
+            "root_selector": "numPositions",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/instances/instance-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          }
+        ],
+        "title": "Positions",
+        "type": "stat"
+      },
+      {
+        "datasource": {
+          "type": "yesoreyeram-infinity-datasource",
+          "uid": "ddgvicmd81logd"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "fixedColor": "text",
+              "mode": "fixed"
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 3,
+          "w": 2,
+          "x": 4,
+          "y": 1
+        },
+        "id": 73,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "area",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "showPercentChange": false,
+          "textMode": "auto",
+          "wideLayout": true
+        },
+        "pluginVersion": "10.4.1",
+        "targets": [
+          {
+            "columns": [],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "parser": "backend",
+            "refId": "A",
+            "root_selector": "numVehicles",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/instances/instance-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          }
+        ],
+        "title": "Vehicles",
+        "type": "stat"
+      },
+      {
+        "datasource": {
+          "type": "yesoreyeram-infinity-datasource",
+          "uid": "ddgvicmd81logd"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "custom": {
+              "axisBorderShow": false,
+              "axisCenteredZero": false,
+              "axisColorMode": "text",
+              "axisGridShow": true,
+              "axisLabel": "",
+              "axisPlacement": "left",
+              "fillOpacity": 90,
+              "gradientMode": "none",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "lineWidth": 0,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "fieldMinMax": false,
+            "mappings": [
+              {
+                "options": {
+                  "0.1962": {
+                    "color": "semi-dark-blue",
+                    "index": 0
+                  },
+                  "0.2282": {
+                    "color": "semi-dark-blue",
+                    "index": 1
+                  }
+                },
+                "type": "value"
+              },
+              {
+                "options": {
+                  "from": 0,
+                  "result": {
+                    "color": "super-light-blue",
+                    "index": 2
+                  },
+                  "to": 0.23
+                },
+                "type": "range"
+              },
+              {
+                "options": {
+                  "from": 0.19,
+                  "result": {
+                    "color": "semi-dark-blue",
+                    "index": 3
+                  },
+                  "to": 0.35
+                },
+                "type": "range"
+              },
+              {
+                "options": {
+                  "from": 0.4,
+                  "result": {
+                    "color": "yellow",
+                    "index": 4
+                  },
+                  "to": 1
+                },
+                "type": "range"
+              }
+            ],
+            "max": 1,
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                }
+              ]
+            },
+            "unit": "none"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 16,
+          "w": 4,
+          "x": 6,
+          "y": 1
+        },
+        "id": 98,
+        "options": {
+          "barRadius": 0,
+          "barWidth": 0.88,
+          "fullHighlight": false,
+          "groupWidth": 0.7,
+          "legend": {
+            "calcs": [],
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": false
+          },
+          "orientation": "vertical",
+          "showValue": "never",
+          "stacking": "normal",
+          "text": {},
+          "tooltip": {
+            "mode": "single",
+            "sort": "asc"
+          },
+          "xField": "vehicleId",
+          "xTickLabelRotation": 0,
+          "xTickLabelSpacing": 0
+        },
+        "pluginVersion": "10.4.1",
+        "targets": [
+          {
+            "columns": [
+              {
+                "selector": "relMoveEmpty",
+                "text": "% Moving Empty",
+                "type": "number"
+              },
+              {
+                "selector": "vehicleId",
+                "text": "",
+                "type": "string"
+              },
+              {
+                "selector": "relMoveWorking",
+                "text": "% Moving Working",
+                "type": "number"
+              },
+              {
+                "selector": "relStoppedTime",
+                "text": "% Stopped",
+                "type": "number"
+              }
+            ],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "refId": "A",
+            "root_selector": "routes[0].vehicleInfo",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/solutionsComplete/solutionComplete-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          },
+          {
+            "columns": [
+              {
+                "selector": "relMoveEmpty",
+                "text": "% Moving Empty",
+                "type": "number"
+              },
+              {
+                "selector": "vehicleId",
+                "text": "",
+                "type": "string"
+              },
+              {
+                "selector": "relMoveWorking",
+                "text": "% Moving Working",
+                "type": "number"
+              },
+              {
+                "selector": "relStoppedTime",
+                "text": "% Stopped",
+                "type": "number"
+              }
+            ],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "refId": "B",
+            "root_selector": "routes[1].vehicleInfo",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/solutionsComplete/solutionComplete-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          },
+          {
+            "columns": [
+              {
+                "selector": "relMoveEmpty",
+                "text": "% Moving Empty",
+                "type": "number"
+              },
+              {
+                "selector": "vehicleId",
+                "text": "",
+                "type": "string"
+              },
+              {
+                "selector": "relMoveWorking",
+                "text": "% Moving Working",
+                "type": "number"
+              },
+              {
+                "selector": "relStoppedTime",
+                "text": "% Stopped",
+                "type": "number"
+              }
+            ],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "refId": "C",
+            "root_selector": "routes[2].vehicleInfo",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/solutionsComplete/solutionComplete-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          },
+          {
+            "columns": [
+              {
+                "selector": "relMoveEmpty",
+                "text": "% Moving Empty",
+                "type": "number"
+              },
+              {
+                "selector": "vehicleId",
+                "text": "",
+                "type": "string"
+              },
+              {
+                "selector": "relMoveWorking",
+                "text": "% Moving Working",
+                "type": "number"
+              },
+              {
+                "selector": "relStoppedTime",
+                "text": "% Stopped",
+                "type": "number"
+              }
+            ],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "refId": "D",
+            "root_selector": "routes[3].vehicleInfo",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/solutionsComplete/solutionComplete-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          },
+          {
+            "columns": [
+              {
+                "selector": "relMoveEmpty",
+                "text": "% Moving Empty",
+                "type": "number"
+              },
+              {
+                "selector": "vehicleId",
+                "text": "",
+                "type": "string"
+              },
+              {
+                "selector": "relMoveWorking",
+                "text": "% Moving Working",
+                "type": "number"
+              },
+              {
+                "selector": "relStoppedTime",
+                "text": "% Stopped",
+                "type": "number"
+              }
+            ],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "refId": "E",
+            "root_selector": "routes[4].vehicleInfo",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/solutionsComplete/solutionComplete-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          },
+          {
+            "columns": [
+              {
+                "selector": "relMoveEmpty",
+                "text": "% Moving Empty",
+                "type": "number"
+              },
+              {
+                "selector": "vehicleId",
+                "text": "",
+                "type": "string"
+              },
+              {
+                "selector": "relMoveWorking",
+                "text": "% Moving Working",
+                "type": "number"
+              },
+              {
+                "selector": "relStoppedTime",
+                "text": "% Stopped",
+                "type": "number"
+              }
+            ],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "refId": "F",
+            "root_selector": "routes[5].vehicleInfo",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/solutionsComplete/solutionComplete-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          },
+          {
+            "columns": [
+              {
+                "selector": "relMoveEmpty",
+                "text": "% Moving Empty",
+                "type": "number"
+              },
+              {
+                "selector": "vehicleId",
+                "text": "",
+                "type": "string"
+              },
+              {
+                "selector": "relMoveWorking",
+                "text": "% Moving Working",
+                "type": "number"
+              },
+              {
+                "selector": "relStoppedTime",
+                "text": "% Stopped",
+                "type": "number"
+              }
+            ],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "refId": "G",
+            "root_selector": "routes[6].vehicleInfo",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/solutionsComplete/solutionComplete-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          },
+          {
+            "columns": [
+              {
+                "selector": "relMoveEmpty",
+                "text": "% Moving Empty",
+                "type": "number"
+              },
+              {
+                "selector": "vehicleId",
+                "text": "",
+                "type": "string"
+              },
+              {
+                "selector": "relMoveWorking",
+                "text": "% Moving Working",
+                "type": "number"
+              },
+              {
+                "selector": "relStoppedTime",
+                "text": "% Stopped",
+                "type": "number"
+              }
+            ],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "refId": "H",
+            "root_selector": "routes[7].vehicleInfo",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/solutionsComplete/solutionComplete-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          },
+          {
+            "columns": [
+              {
+                "selector": "relMoveEmpty",
+                "text": "% Moving Empty",
+                "type": "number"
+              },
+              {
+                "selector": "vehicleId",
+                "text": "",
+                "type": "string"
+              },
+              {
+                "selector": "relMoveWorking",
+                "text": "% Moving Working",
+                "type": "number"
+              },
+              {
+                "selector": "relStoppedTime",
+                "text": "% Stopped",
+                "type": "number"
+              }
+            ],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "refId": "I",
+            "root_selector": "routes[8].vehicleInfo",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/solutionsComplete/solutionComplete-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          },
+          {
+            "columns": [
+              {
+                "selector": "relMoveEmpty",
+                "text": "% Moving Empty",
+                "type": "number"
+              },
+              {
+                "selector": "vehicleId",
+                "text": "",
+                "type": "string"
+              },
+              {
+                "selector": "relMoveWorking",
+                "text": "% Moving Working",
+                "type": "number"
+              },
+              {
+                "selector": "relStoppedTime",
+                "text": "% Stopped",
+                "type": "number"
+              }
+            ],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "json_options": {
+              "columnar": false
+            },
+            "refId": "J",
+            "root_selector": "routes[9].vehicleInfo",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/solutionsComplete/solutionComplete-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          }
+        ],
+        "title": "% Empty Mov., Working Mov., Stopped",
+        "transformations": [
+          {
+            "id": "joinByField",
+            "options": {
+              "byField": "vehicleId",
+              "mode": "outer"
+            }
+          }
+        ],
+        "type": "barchart"
+      },
+      {
+        "datasource": {
+          "type": "yesoreyeram-infinity-datasource",
+          "uid": "ddgvicmd81logd"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "axisBorderShow": false,
+              "axisCenteredZero": false,
+              "axisColorMode": "text",
+              "axisLabel": "",
+              "axisPlacement": "auto",
+              "barAlignment": 0,
+              "drawStyle": "line",
+              "fillOpacity": 0,
+              "gradientMode": "none",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "insertNulls": false,
+              "lineInterpolation": "linear",
+              "lineStyle": {
+                "fill": "solid"
+              },
+              "lineWidth": 2,
+              "pointSize": 5,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "showPoints": "auto",
+              "spanNulls": false,
+              "stacking": {
+                "group": "A",
+                "mode": "none"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            }
+          },
+          "overrides": [
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "Vehículo 5 J"
+              },
+              "properties": [
+                {
+                  "id": "color",
+                  "value": {
+                    "fixedColor": "#51f0f7",
+                    "mode": "fixed"
+                  }
+                }
+              ]
+            },
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "Vehículo 5 E"
+              },
+              "properties": [
+                {
+                  "id": "color",
+                  "value": {
+                    "fixedColor": "purple",
+                    "mode": "fixed"
+                  }
+                }
+              ]
+            },
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "Vehículo 4 D"
+              },
+              "properties": [
+                {
+                  "id": "color",
+                  "value": {
+                    "fixedColor": "green",
+                    "mode": "fixed"
+                  }
+                }
+              ]
+            },
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "Vehículo 5 F"
+              },
+              "properties": [
+                {
+                  "id": "color",
+                  "value": {
+                    "fixedColor": "orange",
+                    "mode": "fixed"
+                  }
+                }
+              ]
+            },
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "Vehículo 3 C"
+              },
+              "properties": [
+                {
+                  "id": "color",
+                  "value": {
+                    "fixedColor": "yellow",
+                    "mode": "fixed"
+                  }
+                }
+              ]
+            },
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "Vehículo 2 B"
+              },
+              "properties": [
+                {
+                  "id": "color",
+                  "value": {
+                    "fixedColor": "red",
+                    "mode": "fixed"
+                  }
+                }
+              ]
+            },
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "Vehículo 1 A"
+              },
+              "properties": [
+                {
+                  "id": "color",
+                  "value": {
+                    "fixedColor": "blue",
+                    "mode": "fixed"
+                  }
+                }
+              ]
+            },
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "Vehículo 5 I"
+              },
+              "properties": [
+                {
+                  "id": "color",
+                  "value": {
+                    "fixedColor": "text",
+                    "mode": "fixed"
+                  }
+                }
+              ]
+            },
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "Vehículo 5 H"
+              },
+              "properties": [
+                {
+                  "id": "color",
+                  "value": {
+                    "fixedColor": "super-light-red",
+                    "mode": "fixed"
+                  }
+                }
+              ]
+            },
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "Vehículo 5 G"
+              },
+              "properties": [
+                {
+                  "id": "color",
+                  "value": {
+                    "fixedColor": "#5a3232",
+                    "mode": "fixed"
+                  }
+                }
+              ]
+            },
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "Vehículo 6 F"
+              },
+              "properties": [
+                {
+                  "id": "color",
+                  "value": {
+                    "fixedColor": "orange",
+                    "mode": "fixed"
+                  }
+                }
+              ]
+            },
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "Vehículo 7 G"
+              },
+              "properties": [
+                {
+                  "id": "color",
+                  "value": {
+                    "fixedColor": "#5a3232",
+                    "mode": "fixed"
+                  }
+                }
+              ]
+            },
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "Vehículo 8 H"
+              },
+              "properties": [
+                {
+                  "id": "color",
+                  "value": {
+                    "fixedColor": "super-light-red",
+                    "mode": "fixed"
+                  }
+                }
+              ]
+            },
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "Vehículo 9 I"
+              },
+              "properties": [
+                {
+                  "id": "color",
+                  "value": {
+                    "fixedColor": "text",
+                    "mode": "fixed"
+                  }
+                }
+              ]
+            },
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "Vehículo 10 J"
+              },
+              "properties": [
+                {
+                  "id": "color",
+                  "value": {
+                    "fixedColor": "#00e1fa",
+                    "mode": "fixed"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "gridPos": {
+          "h": 23,
+          "w": 6,
+          "x": 0,
+          "y": 4
+        },
+        "id": 74,
+        "options": {
+          "legend": {
+            "calcs": [],
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": true
+          },
+          "tooltip": {
+            "mode": "single",
+            "sort": "none"
+          },
+          "xField": "id"
+        },
+        "pluginVersion": "10.4.1",
+        "targets": [
+          {
+            "columns": [
+              {
+                "selector": "accumulatedCost",
+                "text": "Vehículo 1",
+                "type": "number"
+              },
+              {
+                "selector": "id",
+                "text": "",
+                "timestampFormat": "20060102",
+                "type": "number"
+              }
+            ],
+            "computed_columns": [],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "parser": "backend",
+            "refId": "A",
+            "root_selector": "routes[0].trayectoria.desplazamientos",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/solutionsComplete/solutionComplete-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          },
+          {
+            "columns": [
+              {
+                "selector": "accumulatedCost",
+                "text": "Vehículo 2",
+                "type": "number"
+              },
+              {
+                "selector": "id",
+                "text": "",
+                "timestampFormat": "20060102",
+                "type": "number"
+              }
+            ],
+            "computed_columns": [],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "parser": "backend",
+            "refId": "B",
+            "root_selector": "routes[1].trayectoria.desplazamientos",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/solutionsComplete/solutionComplete-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          },
+          {
+            "columns": [
+              {
+                "selector": "accumulatedCost",
+                "text": "Vehículo 3",
+                "type": "number"
+              },
+              {
+                "selector": "id",
+                "text": "",
+                "timestampFormat": "20060102",
+                "type": "number"
+              }
+            ],
+            "computed_columns": [],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "parser": "backend",
+            "refId": "C",
+            "root_selector": "routes[2].trayectoria.desplazamientos",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/solutionsComplete/solutionComplete-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          },
+          {
+            "columns": [
+              {
+                "selector": "accumulatedCost",
+                "text": "Vehículo 4",
+                "type": "number"
+              },
+              {
+                "selector": "id",
+                "text": "",
+                "timestampFormat": "20060102",
+                "type": "number"
+              }
+            ],
+            "computed_columns": [],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "parser": "backend",
+            "refId": "D",
+            "root_selector": "routes[3].trayectoria.desplazamientos",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/solutionsComplete/solutionComplete-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          },
+          {
+            "columns": [
+              {
+                "selector": "accumulatedCost",
+                "text": "Vehículo 5",
+                "type": "number"
+              },
+              {
+                "selector": "id",
+                "text": "",
+                "timestampFormat": "20060102",
+                "type": "number"
+              }
+            ],
+            "computed_columns": [],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "parser": "backend",
+            "refId": "E",
+            "root_selector": "routes[4].trayectoria.desplazamientos",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/solutionsComplete/solutionComplete-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          },
+          {
+            "columns": [
+              {
+                "selector": "accumulatedCost",
+                "text": "Vehículo 6",
+                "type": "number"
+              },
+              {
+                "selector": "id",
+                "text": "",
+                "timestampFormat": "20060102",
+                "type": "number"
+              }
+            ],
+            "computed_columns": [],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "parser": "backend",
+            "refId": "F",
+            "root_selector": "routes[5].trayectoria.desplazamientos",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/solutionsComplete/solutionComplete-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          },
+          {
+            "columns": [
+              {
+                "selector": "accumulatedCost",
+                "text": "Vehículo 7",
+                "type": "number"
+              },
+              {
+                "selector": "id",
+                "text": "",
+                "timestampFormat": "20060102",
+                "type": "number"
+              }
+            ],
+            "computed_columns": [],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "parser": "backend",
+            "refId": "G",
+            "root_selector": "routes[6].trayectoria.desplazamientos",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/solutionsComplete/solutionComplete-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          },
+          {
+            "columns": [
+              {
+                "selector": "accumulatedCost",
+                "text": "Vehículo 8",
+                "type": "number"
+              },
+              {
+                "selector": "id",
+                "text": "",
+                "timestampFormat": "20060102",
+                "type": "number"
+              }
+            ],
+            "computed_columns": [],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "parser": "backend",
+            "refId": "H",
+            "root_selector": "routes[7].trayectoria.desplazamientos",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/solutionsComplete/solutionComplete-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          },
+          {
+            "columns": [
+              {
+                "selector": "accumulatedCost",
+                "text": "Vehículo 9",
+                "type": "number"
+              },
+              {
+                "selector": "id",
+                "text": "",
+                "timestampFormat": "20060102",
+                "type": "number"
+              }
+            ],
+            "computed_columns": [],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "parser": "backend",
+            "refId": "I",
+            "root_selector": "routes[8].trayectoria.desplazamientos",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/solutionsComplete/solutionComplete-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          },
+          {
+            "columns": [
+              {
+                "selector": "accumulatedCost",
+                "text": "Vehículo 10",
+                "type": "number"
+              },
+              {
+                "selector": "id",
+                "text": "",
+                "timestampFormat": "20060102",
+                "type": "number"
+              }
+            ],
+            "computed_columns": [],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "parser": "backend",
+            "refId": "J",
+            "root_selector": "routes[9].trayectoria.desplazamientos",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/solutionsComplete/solutionComplete-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          }
+        ],
+        "title": "Accumulated Cost by id (60-200-10-0)",
+        "transformations": [
+          {
+            "disabled": true,
+            "id": "filterByValue",
+            "options": {
+              "filters": [
+                {
+                  "config": {
+                    "id": "greater",
+                    "options": {
+                      "value": 0
+                    }
+                  },
+                  "fieldName": "A id"
+                }
+              ],
+              "match": "any",
+              "type": "include"
+            }
+          },
+          {
+            "id": "sortBy",
+            "options": {
+              "fields": {},
+              "sort": [
+                {
+                  "field": "A accumulatedCost"
+                }
+              ]
+            }
+          },
+          {
+            "id": "joinByField",
+            "options": {
+              "byField": "id",
+              "mode": "outer"
+            }
+          }
+        ],
+        "type": "trend"
+      },
+      {
+        "datasource": {
+          "type": "yesoreyeram-infinity-datasource",
+          "uid": "ddgvicmd81logd"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "custom": {
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 14,
+          "w": 14,
+          "x": 10,
+          "y": 13
+        },
+        "id": 104,
+        "options": {
+          "basemap": {
+            "config": {},
+            "name": "Layer 0",
+            "opacity": 0,
+            "tooltip": false,
+            "type": "xyz"
+          },
+          "controls": {
+            "mouseWheelZoom": true,
+            "showAttribution": false,
+            "showDebug": false,
+            "showMeasure": false,
+            "showScale": false,
+            "showZoom": true
+          },
+          "layers": [
+            {
+              "config": {
+                "showLegend": false,
+                "style": {
+                  "color": {
+                    "fixed": "transparent"
+                  },
+                  "opacity": 1,
+                  "rotation": {
+                    "fixed": 0,
+                    "max": 360,
+                    "min": -360,
+                    "mode": "mod"
+                  },
+                  "size": {
+                    "fixed": 10,
+                    "max": 15,
+                    "min": 2
+                  },
+                  "symbol": {
+                    "fixed": "img/icons/marker/circle.svg",
+                    "mode": "fixed"
+                  },
+                  "symbolAlign": {
+                    "horizontal": "center",
+                    "vertical": "center"
+                  },
+                  "text": {
+                    "field": "node",
+                    "fixed": "",
+                    "mode": "fixed"
+                  },
+                  "textConfig": {
+                    "offsetX": 0,
+                    "offsetY": 0,
+                    "textAlign": "center",
+                    "textBaseline": "middle"
+                  }
+                }
+              },
+              "filterData": {
+                "id": "byRefId",
+                "options": "A"
+              },
+              "location": {
+                "mode": "auto"
+              },
+              "name": "Layer 3",
+              "tooltip": false,
+              "type": "markers"
+            },
+            {
+              "config": {
+                "showLegend": false,
+                "style": {
+                  "color": {
+                    "fixed": "text"
+                  },
+                  "opacity": 0,
+                  "rotation": {
+                    "fixed": 0,
+                    "max": 360,
+                    "min": -360,
+                    "mode": "mod"
+                  },
+                  "size": {
+                    "fixed": 1,
+                    "max": 15,
+                    "min": 2
+                  },
+                  "symbol": {
+                    "fixed": "img/icons/unicons/16-plus.svg",
+                    "mode": "fixed"
+                  },
+                  "symbolAlign": {
+                    "horizontal": "center",
+                    "vertical": "center"
+                  },
+                  "text": {
+                    "field": "node",
+                    "fixed": "1",
+                    "mode": "field"
+                  },
+                  "textConfig": {
+                    "fontSize": 25,
+                    "offsetX": 0,
+                    "offsetY": 0,
+                    "textAlign": "center",
+                    "textBaseline": "middle"
+                  }
+                }
+              },
+              "filterData": {
+                "id": "byRefId",
+                "options": "A"
+              },
+              "location": {
+                "mode": "auto"
+              },
+              "name": "Layer 4",
+              "tooltip": false,
+              "type": "markers"
+            },
+            {
+              "config": {
+                "arrow": 0,
+                "style": {
+                  "color": {
+                    "fixed": "#3883f3"
+                  },
+                  "lineWidth": 2,
+                  "opacity": 1,
+                  "rotation": {
+                    "fixed": 0,
+                    "max": 360,
+                    "min": -360,
+                    "mode": "mod"
+                  },
+                  "size": {
+                    "fixed": 5,
+                    "max": 15,
+                    "min": 2
+                  },
+                  "symbol": {
+                    "fixed": "img/icons/marker/circle.svg",
+                    "mode": "fixed"
+                  },
+                  "symbolAlign": {
+                    "horizontal": "center",
+                    "vertical": "center"
+                  },
+                  "textConfig": {
+                    "fontSize": 12,
+                    "offsetX": 0,
+                    "offsetY": 0,
+                    "textAlign": "center",
+                    "textBaseline": "middle"
+                  }
+                }
+              },
+              "filterData": {
+                "id": "byRefId",
+                "options": "B"
+              },
+              "location": {
+                "mode": "auto"
+              },
+              "name": "Layer 5",
+              "opacity": 0.7,
+              "tooltip": true,
+              "type": "route"
+            }
+          ],
+          "tooltip": {
+            "mode": "details"
+          },
+          "view": {
+            "allLayers": true,
+            "id": "coords",
+            "lat": 0.5,
+            "lon": 1,
+            "shared": false,
+            "zoom": 9
+          }
+        },
+        "pluginVersion": "10.4.1",
+        "targets": [
+          {
+            "columns": [],
+            "data": "node,latitude,longitude\n118,0.19699,0.67248\n135,0.84796,1.00198\n133,0.46976,1.58644\n24,0.24344,0.32834\n55,0.698,1.76064\n102,0.17575,1.10772\n40,0.692,1.40832\n162,0.74003,0.41488\n37,0.16054,0.4674\n155,0.54955,0.28438\n77,0.92209,1.40082\n118,0.19699,0.67248\n135,0.84796,1.00198\n133,0.46976,1.58644\n24,0.24344,0.32834\n55,0.698,1.76064\n102,0.17575,1.10772\n40,0.692,1.40832\n162,0.74003,0.41488\n37,0.16054,0.4674\n155,0.54955,0.28438\n77,0.92209,1.40082\n159,0.34782,1.7772\n86,0.84011,0.4397\n26,0.40696,0.57562\n13,0.42709,1.95368\n103,0.51309,1.97642\n194,0.8776,1.55552\n164,0.03471,0.9157\n64,0.0822,1.58954\n111,0.92763,0.4285\n129,0.59126,0.32922\n190,0.18426,0.47262\n148,0.32674,1.35874\n152,0.49901,1.19584\n39,0.34956,0.72592\n128,0.15274,1.0896\n160,0.89784,0.6005\n112,0.2643,1.5751\n116,0.30811,0.4477\n11,0.80242,1.71096\n101,0.06079,1.30018\n45,0.6501,1.75744\n71,0.6931,0.92024\n99,0.20172,1.04308\n76,0.79173,0.37942\n93,0.85323,1.75646\n1,0.43441,1.34254\n162,0.74003,0.41488\n78,0.45378,1.90292\n51,0.48298,0.26548\n66,0.83892,1.41028\n157,1.0,0.78188\n114,0.77829,1.13766\n180,0.34653,1.52106\n34,0.22515,1.7466\n110,0.40991,0.10248\n168,0.62301,0.28748\n19,0.54947,0.65656\n195,0.94168,1.33292\n90,0.23916,1.14968\n177,0.83677,0.63938\n143,0.07466,0.94012\n83,0.971,1.1607\n99,0.20172,1.04308\n173,0.22629,1.68884\n32,0.55493,0.18694\n134,0.07933,0.51266\n189,0.5704,1.1543\n78,0.45378,1.90292\n105,0.08749,0.92246\n77,0.92209,1.40082\n79,0.51625,1.77146\n44,0.49859,1.85098\n101,0.06079,1.30018\n117,0.41678,1.3772\n193,0.31574,1.34354\n93,0.85323,1.75646\n158,0.77107,1.26412\n99,0.20172,1.04308\n45,0.6501,1.75744\n147,0.67344,0.42872\n145,0.51065,0.74418\n18,0.37423,1.71556\n119,0.45261,1.33094\n109,0.13485,0.59038\n167,0.3622,0.92538\n108,0.40865,0.35604\n56,0.33043,0.93736\n99,0.20172,1.04308\n66,0.83892,1.41028\n174,0.63843,1.74028\n82,0.12371,0.7359\n139,0.21938,1.26714\n17,0.24297,1.2795\n78,0.45378,1.90292\n79,0.51625,1.77146\n187,0.82192,1.6585\n7,0.30293,1.90864\n198,0.53712,1.16022\n75,0.18605,0.76836\n162,0.74003,0.41488\n88,0.92719,0.73024\n31,0.32261,0.38374\n130,0.24013,1.4095\n189,0.5704,1.1543\n184,0.88395,0.44552\n82,0.12371,0.7359\n126,0.96224,1.05886\n50,0.20882,0.54142\n96,0.60399,1.77918\n108,0.40865,0.35604\n129,0.59126,0.32922\n178,0.88837,0.74168\n184,0.88395,0.44552\n51,0.48298,0.26548\n28,0.08317,0.71506\n197,0.93725,0.8753\n38,0.42522,0.22388\n115,0.86891,1.6232\n70,0.60583,1.54248\n119,0.45261,1.33094\n175,0.85084,0.95858\n127,0.36237,0.04634\n8,0.85883,1.42374\n149,0.57665,0.33498\n155,0.54955,0.28438\n187,0.82192,1.6585\n180,0.34653,1.52106\n30,0.13651,1.0439\n38,0.42522,0.22388",
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "parser": "backend",
+            "refId": "A",
+            "root_selector": "",
+            "source": "url",
+            "type": "csv",
+            "uql": "parse-csv",
+            "url": "http://172.17.0.2:7000/geomap/geomap-60-200-10-0/geomap-$vehicle.csv",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          },
+          {
+            "columns": [],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "parser": "backend",
+            "refId": "B",
+            "root_selector": "",
+            "source": "url",
+            "type": "csv",
+            "uql": "parse-csv",
+            "url": "http://172.17.0.2:7000/geomap/geomap-60-200-10-0/geomap-$vehicle.csv",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          }
+        ],
+        "title": "Vehicle trajectories GeoMap with Vehicle Filter",
+        "type": "geomap"
+      },
+      {
+        "datasource": {
+          "type": "yesoreyeram-infinity-datasource",
+          "uid": "ddgvicmd81logd"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "custom": {
+              "axisBorderShow": false,
+              "axisCenteredZero": false,
+              "axisColorMode": "text",
+              "axisLabel": "",
+              "axisPlacement": "auto",
+              "fillOpacity": 80,
+              "gradientMode": "none",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "lineWidth": 0,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "fieldMinMax": false,
+            "mappings": [],
+            "max": 10,
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "light-purple",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "none"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 10,
+          "w": 4,
+          "x": 6,
+          "y": 17
+        },
+        "id": 99,
+        "options": {
+          "barRadius": 0,
+          "barWidth": 0.88,
+          "fullHighlight": false,
+          "groupWidth": 0.7,
+          "legend": {
+            "calcs": [],
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": false
+          },
+          "orientation": "horizontal",
+          "showValue": "never",
+          "stacking": "normal",
+          "tooltip": {
+            "mode": "single",
+            "sort": "none"
+          },
+          "xTickLabelRotation": 0,
+          "xTickLabelSpacing": 0
+        },
+        "pluginVersion": "10.4.1",
+        "targets": [
+          {
+            "columns": [
+              {
+                "selector": "vehicleId",
+                "text": "Vehículo",
+                "type": "string"
+              },
+              {
+                "selector": "route_length",
+                "text": "N Trabajos",
+                "type": "number"
+              }
+            ],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "refId": "A",
+            "root_selector": "routes[0].vehicleInfo",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/solutionsComplete/solutionComplete-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          },
+          {
+            "columns": [
+              {
+                "selector": "vehicleId",
+                "text": "Vehículo",
+                "type": "string"
+              },
+              {
+                "selector": "route_length",
+                "text": "N Trabajos",
+                "type": "number"
+              }
+            ],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "refId": "B",
+            "root_selector": "routes[1].vehicleInfo",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/solutionsComplete/solutionComplete-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          },
+          {
+            "columns": [
+              {
+                "selector": "vehicleId",
+                "text": "Vehículo",
+                "type": "string"
+              },
+              {
+                "selector": "route_length",
+                "text": "N Trabajos",
+                "type": "number"
+              }
+            ],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "refId": "C",
+            "root_selector": "routes[2].vehicleInfo",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/solutionsComplete/solutionComplete-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          },
+          {
+            "columns": [
+              {
+                "selector": "vehicleId",
+                "text": "Vehículo",
+                "type": "string"
+              },
+              {
+                "selector": "route_length",
+                "text": "N Trabajos",
+                "type": "number"
+              }
+            ],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "refId": "D",
+            "root_selector": "routes[3].vehicleInfo",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/solutionsComplete/solutionComplete-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          },
+          {
+            "columns": [
+              {
+                "selector": "vehicleId",
+                "text": "Vehículo",
+                "type": "string"
+              },
+              {
+                "selector": "route_length",
+                "text": "N Trabajos",
+                "type": "number"
+              }
+            ],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "refId": "E",
+            "root_selector": "routes[4].vehicleInfo",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/solutionsComplete/solutionComplete-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          },
+          {
+            "columns": [
+              {
+                "selector": "vehicleId",
+                "text": "Vehículo",
+                "type": "string"
+              },
+              {
+                "selector": "route_length",
+                "text": "N Trabajos",
+                "type": "number"
+              }
+            ],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "refId": "F",
+            "root_selector": "routes[5].vehicleInfo",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/solutionsComplete/solutionComplete-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          },
+          {
+            "columns": [
+              {
+                "selector": "vehicleId",
+                "text": "Vehículo",
+                "type": "string"
+              },
+              {
+                "selector": "route_length",
+                "text": "N Trabajos",
+                "type": "number"
+              }
+            ],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "refId": "G",
+            "root_selector": "routes[6].vehicleInfo",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/solutionsComplete/solutionComplete-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          },
+          {
+            "columns": [
+              {
+                "selector": "vehicleId",
+                "text": "Vehículo",
+                "type": "string"
+              },
+              {
+                "selector": "route_length",
+                "text": "N Trabajos",
+                "type": "number"
+              }
+            ],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "refId": "H",
+            "root_selector": "routes[7].vehicleInfo",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/solutionsComplete/solutionComplete-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          },
+          {
+            "columns": [
+              {
+                "selector": "vehicleId",
+                "text": "Vehículo",
+                "type": "string"
+              },
+              {
+                "selector": "route_length",
+                "text": "N Trabajos",
+                "type": "number"
+              }
+            ],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "refId": "I",
+            "root_selector": "routes[8].vehicleInfo",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/solutionsComplete/solutionComplete-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          },
+          {
+            "columns": [
+              {
+                "selector": "vehicleId",
+                "text": "Vehículo",
+                "type": "string"
+              },
+              {
+                "selector": "route_length",
+                "text": "N Trabajos",
+                "type": "number"
+              }
+            ],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "ddgvicmd81logd"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "refId": "J",
+            "root_selector": "routes[9].vehicleInfo",
+            "source": "url",
+            "type": "json",
+            "url": "http://172.17.0.2:7000/solutionsComplete/solutionComplete-60-200-10-0.json",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          }
+        ],
+        "title": "Job quantity",
+        "transformations": [
+          {
+            "id": "joinByField",
+            "options": {
+              "byField": "Vehículo",
+              "mode": "outer"
+            }
+          }
+        ],
+        "type": "barchart"
+      },
+      {
+        "datasource": {
+          "type": "grafana-testdata-datasource",
+          "uid": "edksd0i6rrdhcd"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "custom": {
+              "fillOpacity": 83,
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "insertNulls": false,
+              "lineWidth": 0,
+              "spanNulls": true
+            },
+            "mappings": [
+              {
+                "options": {
+                  "En espera": {
+                    "color": "#818181",
+                    "index": 5
+                  },
+                  "Iniciando trabajo": {
+                    "color": "light-yellow",
+                    "index": 1
+                  },
+                  "Iniciando vehículo": {
+                    "color": "green",
+                    "index": 0
+                  },
+                  "Terminando trabajo": {
+                    "color": "light-orange",
+                    "index": 4
+                  },
+                  "Trabajos completados": {
+                    "color": "transparent",
+                    "index": 6
+                  },
+                  "Vehículo libre en movimiento": {
+                    "color": "super-light-blue",
+                    "index": 2
+                  },
+                  "Vehículo trabajando en movimiento": {
+                    "color": "semi-dark-blue",
+                    "index": 3
+                  }
+                },
+                "type": "value"
+              }
+            ],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 18,
+          "w": 24,
+          "x": 0,
+          "y": 27
+        },
+        "id": 83,
+        "options": {
+          "alignValue": "left",
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": true
+          },
+          "mergeValues": true,
+          "rowHeight": 0.9,
+          "showValue": "never",
+          "tooltip": {
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "targets": [
+          {
+            "csvContent": "timestamps,Vehículo 1,Vehículo 2,Vehículo 3,Vehículo 4,Vehículo 5,Vehículo 6,Vehículo 7,Vehículo 8,Vehículo 9,Vehículo 10\r\n2000-01-01 00:00:00,Iniciando vehículo,,,,,,,,,\r\n2000-01-01 01:28:00,Vehículo libre en movimiento,,,,,,,,,\r\n2000-01-01 01:37:00,Iniciando trabajo,,,,,,,,,\r\n2000-01-01 01:55:00,Vehículo trabajando en movimiento,,,,,,,,,\r\n2000-01-01 03:16:00,Terminando trabajo,,,,,,,,,\r\n2000-01-01 04:27:00,Vehículo libre en movimiento,,,,,,,,,\r\n2000-01-01 04:41:00,Iniciando trabajo,,,,,,,,,\r\n2000-01-01 04:46:00,Vehículo trabajando en movimiento,,,,,,,,,\r\n2000-01-01 05:26:00,Terminando trabajo,,,,,,,,,\r\n2000-01-01 06:02:00,Vehículo libre en movimiento,,,,,,,,,\r\n2000-01-01 06:40:00,Iniciando trabajo,,,,,,,,,\r\n2000-01-01 08:00:00,Vehículo trabajando en movimiento,,,,,,,,,\r\n2000-01-01 08:39:00,Terminando trabajo,,,,,,,,,\r\n2000-01-01 09:44:00,Vehículo libre en movimiento,,,,,,,,,\r\n2000-01-01 11:10:00,Iniciando trabajo,,,,,,,,,\r\n2000-01-01 11:57:00,Vehículo trabajando en movimiento,,,,,,,,,\r\n2000-01-01 12:37:00,Terminando trabajo,,,,,,,,,\r\n2000-01-01 13:56:00,Vehículo libre en movimiento,,,,,,,,,\r\n2000-01-01 14:24:00,Iniciando trabajo,,,,,,,,,\r\n2000-01-01 14:33:00,Vehículo trabajando en movimiento,,,,,,,,,\r\n2000-01-01 15:42:00,Terminando trabajo,,,,,,,,,\r\n2000-01-01 16:41:00,Vehículo libre en movimiento,,,,,,,,,\r\n2000-01-01 17:03:00,Iniciando trabajo,,,,,,,,,\r\n2000-01-01 17:26:00,Vehículo trabajando en movimiento,,,,,,,,,\r\n2000-01-01 19:01:00,Terminando trabajo,,,,,,,,,\r\n2000-01-01 19:04:00,Trabajos completados,,,,,,,,,\r\n2000-01-01 00:00:00,,Iniciando vehículo,,,,,,,,\r\n2000-01-01 00:56:00,,Vehículo libre en movimiento,,,,,,,,\r\n2000-01-01 02:16:00,,Iniciando trabajo,,,,,,,,\r\n2000-01-01 03:41:00,,Vehículo trabajando en movimiento,,,,,,,,\r\n2000-01-01 05:08:00,,Terminando trabajo,,,,,,,,\r\n2000-01-01 06:27:00,,Vehículo libre en movimiento,,,,,,,,\r\n2000-01-01 06:47:00,,Iniciando trabajo,,,,,,,,\r\n2000-01-01 07:06:00,,Vehículo trabajando en movimiento,,,,,,,,\r\n2000-01-01 07:36:00,,Terminando trabajo,,,,,,,,\r\n2000-01-01 08:28:00,,Vehículo libre en movimiento,,,,,,,,\r\n2000-01-01 08:38:00,,Iniciando trabajo,,,,,,,,\r\n2000-01-01 09:32:00,,Vehículo trabajando en movimiento,,,,,,,,\r\n2000-01-01 10:45:00,,Terminando trabajo,,,,,,,,\r\n2000-01-01 10:54:00,,Vehículo libre en movimiento,,,,,,,,\r\n2000-01-01 11:55:00,,Iniciando trabajo,,,,,,,,\r\n2000-01-01 12:55:00,,Vehículo trabajando en movimiento,,,,,,,,\r\n2000-01-01 14:28:00,,Terminando trabajo,,,,,,,,\r\n2000-01-01 14:33:00,,Vehículo libre en movimiento,,,,,,,,\r\n2000-01-01 15:19:00,,Iniciando trabajo,,,,,,,,\r\n2000-01-01 16:22:00,,Vehículo trabajando en movimiento,,,,,,,,\r\n2000-01-01 17:58:00,,Terminando trabajo,,,,,,,,\r\n2000-01-01 19:18:00,,Trabajos completados,,,,,,,,\r\n2000-01-01 00:00:00,,,Iniciando vehículo,,,,,,,\r\n2000-01-01 01:36:00,,,Vehículo libre en movimiento,,,,,,,\r\n2000-01-01 01:44:00,,,Iniciando trabajo,,,,,,,\r\n2000-01-01 01:47:00,,,Vehículo trabajando en movimiento,,,,,,,\r\n2000-01-01 02:45:00,,,Terminando trabajo,,,,,,,\r\n2000-01-01 04:14:00,,,Vehículo libre en movimiento,,,,,,,\r\n2000-01-01 04:27:00,,,Iniciando trabajo,,,,,,,\r\n2000-01-01 04:29:00,,,Vehículo trabajando en movimiento,,,,,,,\r\n2000-01-01 05:36:00,,,Terminando trabajo,,,,,,,\r\n2000-01-01 06:25:00,,,Vehículo libre en movimiento,,,,,,,\r\n2000-01-01 07:16:00,,,Iniciando trabajo,,,,,,,\r\n2000-01-01 08:46:00,,,Vehículo trabajando en movimiento,,,,,,,\r\n2000-01-01 09:14:00,,,Terminando trabajo,,,,,,,\r\n2000-01-01 10:03:00,,,Vehículo libre en movimiento,,,,,,,\r\n2000-01-01 10:31:00,,,Iniciando trabajo,,,,,,,\r\n2000-01-01 11:27:00,,,Vehículo trabajando en movimiento,,,,,,,\r\n2000-01-01 12:22:00,,,Terminando trabajo,,,,,,,\r\n2000-01-01 13:48:00,,,Vehículo libre en movimiento,,,,,,,\r\n2000-01-01 14:24:00,,,Iniciando trabajo,,,,,,,\r\n2000-01-01 14:33:00,,,Vehículo trabajando en movimiento,,,,,,,\r\n2000-01-01 14:35:00,,,Terminando trabajo,,,,,,,\r\n2000-01-01 15:49:00,,,Vehículo libre en movimiento,,,,,,,\r\n2000-01-01 16:07:00,,,Iniciando trabajo,,,,,,,\r\n2000-01-01 17:15:00,,,Vehículo trabajando en movimiento,,,,,,,\r\n2000-01-01 17:34:00,,,Terminando trabajo,,,,,,,\r\n2000-01-01 17:48:00,,,Vehículo libre en movimiento,,,,,,,\r\n2000-01-01 17:48:00,,,Iniciando trabajo,,,,,,,\r\n2000-01-01 18:06:00,,,Vehículo trabajando en movimiento,,,,,,,\r\n2000-01-01 19:11:00,,,Terminando trabajo,,,,,,,\r\n2000-01-01 19:24:00,,,Trabajos completados,,,,,,,\r\n2000-01-01 00:00:00,,,,Iniciando vehículo,,,,,,\r\n2000-01-01 00:45:00,,,,Vehículo libre en movimiento,,,,,,\r\n2000-01-01 00:45:00,,,,Iniciando trabajo,,,,,,\r\n2000-01-01 01:56:00,,,,Vehículo trabajando en movimiento,,,,,,\r\n2000-01-01 02:48:00,,,,Terminando trabajo,,,,,,\r\n2000-01-01 03:08:00,,,,Vehículo libre en movimiento,,,,,,\r\n2000-01-01 04:48:00,,,,Iniciando trabajo,,,,,,\r\n2000-01-01 06:20:00,,,,Vehículo trabajando en movimiento,,,,,,\r\n2000-01-01 06:57:00,,,,Terminando trabajo,,,,,,\r\n2000-01-01 07:10:00,,,,Vehículo libre en movimiento,,,,,,\r\n2000-01-01 07:47:00,,,,Iniciando trabajo,,,,,,\r\n2000-01-01 08:26:00,,,,Vehículo trabajando en movimiento,,,,,,\r\n2000-01-01 08:37:00,,,,Terminando trabajo,,,,,,\r\n2000-01-01 08:57:00,,,,Vehículo libre en movimiento,,,,,,\r\n2000-01-01 09:11:00,,,,Iniciando trabajo,,,,,,\r\n2000-01-01 09:22:00,,,,Vehículo trabajando en movimiento,,,,,,\r\n2000-01-01 09:33:00,,,,Terminando trabajo,,,,,,\r\n2000-01-01 10:02:00,,,,Vehículo libre en movimiento,,,,,,\r\n2000-01-01 10:18:00,,,,Iniciando trabajo,,,,,,\r\n2000-01-01 10:35:00,,,,Vehículo trabajando en movimiento,,,,,,\r\n2000-01-01 10:45:00,,,,Terminando trabajo,,,,,,\r\n2000-01-01 12:19:00,,,,Vehículo libre en movimiento,,,,,,\r\n2000-01-01 12:43:00,,,,Iniciando trabajo,,,,,,\r\n2000-01-01 14:08:00,,,,Vehículo trabajando en movimiento,,,,,,\r\n2000-01-01 14:58:00,,,,Terminando trabajo,,,,,,\r\n2000-01-01 16:18:00,,,,Vehículo libre en movimiento,,,,,,\r\n2000-01-01 16:31:00,,,,Iniciando trabajo,,,,,,\r\n2000-01-01 17:34:00,,,,Vehículo trabajando en movimiento,,,,,,\r\n2000-01-01 18:20:00,,,,Terminando trabajo,,,,,,\r\n2000-01-01 19:11:00,,,,Trabajos completados,,,,,,\r\n2000-01-01 00:00:00,,,,,Iniciando vehículo,,,,,\r\n2000-01-01 00:11:00,,,,,Vehículo libre en movimiento,,,,,\r\n2000-01-01 00:43:00,,,,,Iniciando trabajo,,,,,\r\n2000-01-01 01:00:00,,,,,Vehículo trabajando en movimiento,,,,,\r\n2000-01-01 02:10:00,,,,,Terminando trabajo,,,,,\r\n2000-01-01 03:41:00,,,,,Vehículo libre en movimiento,,,,,\r\n2000-01-01 03:41:00,,,,,Iniciando trabajo,,,,,\r\n2000-01-01 04:02:00,,,,,Vehículo trabajando en movimiento,,,,,\r\n2000-01-01 05:24:00,,,,,Terminando trabajo,,,,,\r\n2000-01-01 06:15:00,,,,,Vehículo libre en movimiento,,,,,\r\n2000-01-01 06:29:00,,,,,Iniciando trabajo,,,,,\r\n2000-01-01 07:10:00,,,,,Vehículo trabajando en movimiento,,,,,\r\n2000-01-01 08:28:00,,,,,Terminando trabajo,,,,,\r\n2000-01-01 09:26:00,,,,,Vehículo libre en movimiento,,,,,\r\n2000-01-01 09:27:00,,,,,Iniciando trabajo,,,,,\r\n2000-01-01 09:28:00,,,,,Vehículo trabajando en movimiento,,,,,\r\n2000-01-01 09:57:00,,,,,Terminando trabajo,,,,,\r\n2000-01-01 11:25:00,,,,,Vehículo libre en movimiento,,,,,\r\n2000-01-01 12:19:00,,,,,Iniciando trabajo,,,,,\r\n2000-01-01 13:55:00,,,,,Vehículo trabajando en movimiento,,,,,\r\n2000-01-01 14:48:00,,,,,Terminando trabajo,,,,,\r\n2000-01-01 16:01:00,,,,,Vehículo libre en movimiento,,,,,\r\n2000-01-01 16:04:00,,,,,Iniciando trabajo,,,,,\r\n2000-01-01 16:27:00,,,,,Vehículo trabajando en movimiento,,,,,\r\n2000-01-01 16:42:00,,,,,Terminando trabajo,,,,,\r\n2000-01-01 17:01:00,,,,,Trabajos completados,,,,,\r\n2000-01-01 00:00:00,,,,,,Iniciando vehículo,,,,\r\n2000-01-01 01:13:00,,,,,,Vehículo libre en movimiento,,,,\r\n2000-01-01 01:28:00,,,,,,Iniciando trabajo,,,,\r\n2000-01-01 02:06:00,,,,,,Vehículo trabajando en movimiento,,,,\r\n2000-01-01 02:35:00,,,,,,Terminando trabajo,,,,\r\n2000-01-01 03:10:00,,,,,,Vehículo libre en movimiento,,,,\r\n2000-01-01 03:13:00,,,,,,Iniciando trabajo,,,,\r\n2000-01-01 03:35:00,,,,,,Vehículo trabajando en movimiento,,,,\r\n2000-01-01 04:36:00,,,,,,Terminando trabajo,,,,\r\n2000-01-01 05:19:00,,,,,,Vehículo libre en movimiento,,,,\r\n2000-01-01 05:28:00,,,,,,Iniciando trabajo,,,,\r\n2000-01-01 06:01:00,,,,,,Vehículo trabajando en movimiento,,,,\r\n2000-01-01 06:44:00,,,,,,Terminando trabajo,,,,\r\n2000-01-01 06:55:00,,,,,,Vehículo libre en movimiento,,,,\r\n2000-01-01 06:59:00,,,,,,Iniciando trabajo,,,,\r\n2000-01-01 07:47:00,,,,,,Vehículo trabajando en movimiento,,,,\r\n2000-01-01 09:02:00,,,,,,Terminando trabajo,,,,\r\n2000-01-01 10:25:00,,,,,,Vehículo libre en movimiento,,,,\r\n2000-01-01 10:29:00,,,,,,Iniciando trabajo,,,,\r\n2000-01-01 11:42:00,,,,,,Vehículo trabajando en movimiento,,,,\r\n2000-01-01 12:58:00,,,,,,Terminando trabajo,,,,\r\n2000-01-01 13:54:00,,,,,,Vehículo libre en movimiento,,,,\r\n2000-01-01 15:29:00,,,,,,Iniciando trabajo,,,,\r\n2000-01-01 16:56:00,,,,,,Vehículo trabajando en movimiento,,,,\r\n2000-01-01 17:47:00,,,,,,Terminando trabajo,,,,\r\n2000-01-01 19:01:00,,,,,,Trabajos completados,,,,\r\n2000-01-01 00:00:00,,,,,,,Iniciando vehículo,,,\r\n2000-01-01 00:21:00,,,,,,,Vehículo libre en movimiento,,,\r\n2000-01-01 00:50:00,,,,,,,Iniciando trabajo,,,\r\n2000-01-01 01:10:00,,,,,,,Vehículo trabajando en movimiento,,,\r\n2000-01-01 02:43:00,,,,,,,Terminando trabajo,,,\r\n2000-01-01 03:36:00,,,,,,,Vehículo libre en movimiento,,,\r\n2000-01-01 04:30:00,,,,,,,Iniciando trabajo,,,\r\n2000-01-01 04:35:00,,,,,,,Vehículo trabajando en movimiento,,,\r\n2000-01-01 05:48:00,,,,,,,En espera,,,\r\n2000-01-01 06:42:00,,,,,,,Terminando trabajo,,,\r\n2000-01-01 07:03:00,,,,,,,Vehículo libre en movimiento,,,\r\n2000-01-01 07:40:00,,,,,,,Iniciando trabajo,,,\r\n2000-01-01 09:03:00,,,,,,,Vehículo trabajando en movimiento,,,\r\n2000-01-01 09:14:00,,,,,,,Terminando trabajo,,,\r\n2000-01-01 09:32:00,,,,,,,Vehículo libre en movimiento,,,\r\n2000-01-01 09:47:00,,,,,,,Iniciando trabajo,,,\r\n2000-01-01 10:24:00,,,,,,,Vehículo trabajando en movimiento,,,\r\n2000-01-01 11:04:00,,,,,,,Terminando trabajo,,,\r\n2000-01-01 11:45:00,,,,,,,Vehículo libre en movimiento,,,\r\n2000-01-01 11:45:00,,,,,,,Iniciando trabajo,,,\r\n2000-01-01 12:34:00,,,,,,,Vehículo trabajando en movimiento,,,\r\n2000-01-01 14:03:00,,,,,,,Terminando trabajo,,,\r\n2000-01-01 15:23:00,,,,,,,Vehículo libre en movimiento,,,\r\n2000-01-01 15:37:00,,,,,,,Iniciando trabajo,,,\r\n2000-01-01 17:05:00,,,,,,,Vehículo trabajando en movimiento,,,\r\n2000-01-01 17:17:00,,,,,,,Terminando trabajo,,,\r\n2000-01-01 18:36:00,,,,,,,Trabajos completados,,,\r\n2000-01-01 00:00:00,,,,,,,,Iniciando vehículo,,\r\n2000-01-01 01:06:00,,,,,,,,Vehículo libre en movimiento,,\r\n2000-01-01 01:44:00,,,,,,,,Iniciando trabajo,,\r\n2000-01-01 02:28:00,,,,,,,,Vehículo trabajando en movimiento,,\r\n2000-01-01 03:00:00,,,,,,,,Terminando trabajo,,\r\n2000-01-01 04:37:00,,,,,,,,Vehículo libre en movimiento,,\r\n2000-01-01 05:35:00,,,,,,,,Iniciando trabajo,,\r\n2000-01-01 05:37:00,,,,,,,,Vehículo trabajando en movimiento,,\r\n2000-01-01 06:11:00,,,,,,,,Terminando trabajo,,\r\n2000-01-01 06:46:00,,,,,,,,Vehículo libre en movimiento,,\r\n2000-01-01 06:55:00,,,,,,,,Iniciando trabajo,,\r\n2000-01-01 07:55:00,,,,,,,,Vehículo trabajando en movimiento,,\r\n2000-01-01 09:15:00,,,,,,,,Terminando trabajo,,\r\n2000-01-01 09:19:00,,,,,,,,Vehículo libre en movimiento,,\r\n2000-01-01 09:42:00,,,,,,,,Iniciando trabajo,,\r\n2000-01-01 10:27:00,,,,,,,,Vehículo trabajando en movimiento,,\r\n2000-01-01 11:17:00,,,,,,,,Terminando trabajo,,\r\n2000-01-01 11:25:00,,,,,,,,Vehículo libre en movimiento,,\r\n2000-01-01 12:20:00,,,,,,,,Iniciando trabajo,,\r\n2000-01-01 13:03:00,,,,,,,,Vehículo trabajando en movimiento,,\r\n2000-01-01 13:08:00,,,,,,,,Terminando trabajo,,\r\n2000-01-01 13:48:00,,,,,,,,Vehículo libre en movimiento,,\r\n2000-01-01 14:27:00,,,,,,,,Iniciando trabajo,,\r\n2000-01-01 14:40:00,,,,,,,,Vehículo trabajando en movimiento,,\r\n2000-01-01 15:59:00,,,,,,,,Terminando trabajo,,\r\n2000-01-01 17:21:00,,,,,,,,Trabajos completados,,\r\n2000-01-01 00:00:00,,,,,,,,,Iniciando vehículo,\r\n2000-01-01 01:39:00,,,,,,,,,Vehículo libre en movimiento,\r\n2000-01-01 02:06:00,,,,,,,,,Iniciando trabajo,\r\n2000-01-01 02:14:00,,,,,,,,,Vehículo trabajando en movimiento,\r\n2000-01-01 03:29:00,,,,,,,,,Terminando trabajo,\r\n2000-01-01 04:37:00,,,,,,,,,Vehículo libre en movimiento,\r\n2000-01-01 04:41:00,,,,,,,,,Iniciando trabajo,\r\n2000-01-01 04:59:00,,,,,,,,,Vehículo trabajando en movimiento,\r\n2000-01-01 05:12:00,,,,,,,,,Terminando trabajo,\r\n2000-01-01 06:42:00,,,,,,,,,Vehículo libre en movimiento,\r\n2000-01-01 06:58:00,,,,,,,,,Iniciando trabajo,\r\n2000-01-01 08:34:00,,,,,,,,,Vehículo trabajando en movimiento,\r\n2000-01-01 10:03:00,,,,,,,,,Terminando trabajo,\r\n2000-01-01 11:32:00,,,,,,,,,Vehículo libre en movimiento,\r\n2000-01-01 11:47:00,,,,,,,,,Iniciando trabajo,\r\n2000-01-01 12:07:00,,,,,,,,,Vehículo trabajando en movimiento,\r\n2000-01-01 12:09:00,,,,,,,,,Terminando trabajo,\r\n2000-01-01 13:10:00,,,,,,,,,Vehículo libre en movimiento,\r\n2000-01-01 13:15:00,,,,,,,,,Iniciando trabajo,\r\n2000-01-01 14:20:00,,,,,,,,,Vehículo trabajando en movimiento,\r\n2000-01-01 14:35:00,,,,,,,,,Terminando trabajo,\r\n2000-01-01 15:30:00,,,,,,,,,Vehículo libre en movimiento,\r\n2000-01-01 15:58:00,,,,,,,,,Iniciando trabajo,\r\n2000-01-01 17:15:00,,,,,,,,,Vehículo trabajando en movimiento,\r\n2000-01-01 18:41:00,,,,,,,,,Terminando trabajo,\r\n2000-01-01 19:03:00,,,,,,,,,Trabajos completados,\r\n2000-01-01 00:00:00,,,,,,,,,,Iniciando vehículo\r\n2000-01-01 00:12:00,,,,,,,,,,Vehículo libre en movimiento\r\n2000-01-01 01:24:00,,,,,,,,,,Iniciando trabajo\r\n2000-01-01 02:34:00,,,,,,,,,,Vehículo trabajando en movimiento\r\n2000-01-01 03:06:00,,,,,,,,,,Terminando trabajo\r\n2000-01-01 03:53:00,,,,,,,,,,Vehículo libre en movimiento\r\n2000-01-01 04:39:00,,,,,,,,,,Iniciando trabajo\r\n2000-01-01 05:22:00,,,,,,,,,,Vehículo trabajando en movimiento\r\n2000-01-01 06:32:00,,,,,,,,,,Terminando trabajo\r\n2000-01-01 07:55:00,,,,,,,,,,Vehículo libre en movimiento\r\n2000-01-01 08:44:00,,,,,,,,,,Iniciando trabajo\r\n2000-01-01 09:41:00,,,,,,,,,,Vehículo trabajando en movimiento\r\n2000-01-01 10:05:00,,,,,,,,,,Terminando trabajo\r\n2000-01-01 11:23:00,,,,,,,,,,Vehículo libre en movimiento\r\n2000-01-01 12:15:00,,,,,,,,,,Iniciando trabajo\r\n2000-01-01 13:13:00,,,,,,,,,,Vehículo trabajando en movimiento\r\n2000-01-01 13:42:00,,,,,,,,,,En espera\r\n2000-01-01 14:05:00,,,,,,,,,,Terminando trabajo\r\n2000-01-01 14:48:00,,,,,,,,,,Vehículo libre en movimiento\r\n2000-01-01 14:49:00,,,,,,,,,,Iniciando trabajo\r\n2000-01-01 16:06:00,,,,,,,,,,Vehículo trabajando en movimiento\r\n2000-01-01 17:42:00,,,,,,,,,,Terminando trabajo\r\n2000-01-01 18:55:00,,,,,,,,,,Trabajos completados\r\n",
+            "datasource": {
+              "type": "grafana-testdata-datasource",
+              "uid": "edksd0i6rrdhcd"
+            },
+            "refId": "A",
+            "scenarioId": "csv_content"
+          }
+        ],
+        "transformations": [
+          {
+            "id": "convertFieldType",
+            "options": {
+              "conversions": [
+                {
+                  "dateFormat": "",
+                  "destinationType": "time",
+                  "targetField": "timestamps"
+                }
+              ],
+              "fields": {}
+            }
+          }
+        ],
+        "type": "state-timeline"
+      }
+    ],
+    "refresh": "",
+    "schemaVersion": 39,
+    "tags": [],
+    "templating": {
+      "list": [
+        {
+          "current": {
+            "selected": false,
+            "text": "vehicle-1",
+            "value": "vehicle-1"
+          },
+          "hide": 0,
+          "includeAll": false,
+          "multi": false,
+          "name": "vehicle",
+          "options": [
+            {
+              "selected": true,
+              "text": "vehicle-1",
+              "value": "vehicle-1"
+            },
+            {
+              "selected": false,
+              "text": "vehicle-2",
+              "value": "vehicle-2"
+            },
+            {
+              "selected": false,
+              "text": "vehicle-3",
+              "value": "vehicle-3"
+            },
+            {
+              "selected": false,
+              "text": "vehicle-4",
+              "value": "vehicle-4"
+            },
+            {
+              "selected": false,
+              "text": "vehicle-5",
+              "value": "vehicle-5"
+            },
+            {
+              "selected": false,
+              "text": "vehicle-6",
+              "value": "vehicle-6"
+            },
+            {
+              "selected": false,
+              "text": "vehicle-7",
+              "value": "vehicle-7"
+            },
+            {
+              "selected": false,
+              "text": "vehicle-8",
+              "value": "vehicle-8"
+            },
+            {
+              "selected": false,
+              "text": "vehicle-9",
+              "value": "vehicle-9"
+            },
+            {
+              "selected": false,
+              "text": "vehicle-10",
+              "value": "vehicle-10"
+            },
+            {
+              "selected": false,
+              "text": "",
+              "value": ""
+            }
+          ],
+          "query": "vehicle-1, vehicle-2, vehicle-3, vehicle-4, vehicle-5, vehicle-6, vehicle-7, vehicle-8, vehicle-9, vehicle-10, ",
+          "queryValue": "",
+          "skipUrlSync": false,
+          "type": "custom"
+        }
+      ]
+    },
+    "time": {
+      "from": "1999-12-31T23:00:00.000Z",
+      "to": "2000-01-02T05:55:00.000Z"
+    },
+    "timepicker": {},
+    "timezone": "browser",
+    "title": "Solutions",
+    "uid": "ddix4e1lmes5cd",
+    "version": 139,
+    "weekStart": ""
+  }
